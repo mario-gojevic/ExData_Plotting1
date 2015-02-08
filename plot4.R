@@ -13,7 +13,7 @@ data$datetime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 data1 <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
 
 # Plot
-png(file = "plot4.png", bg = "transparent")
+png(file = "plot4.png")
 
 par(mfrow = c(2,2))
 

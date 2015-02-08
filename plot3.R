@@ -13,7 +13,7 @@ data$datetime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 data1 <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
 
 # Plot
-png(file = "plot3.png", bg = "transparent")
+png(file = "plot3.png")
 
 plot(data1$datetime, data1$Sub_metering_1, type = "l",
      xlab = "", ylab = "Energy sub metering")
